@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--
+	Student Name: Gar Powell
+	File Name: template.html
+	Date: 10/29/24
+ -->
+
+<html lang="en">
+	<head>
+		<title>Guessing Game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+	<body>
+
+		<!-- Use the header area for the website name or logo. The header contains static content. -->
+		<header>
+			<img src="images/heder_picture_gar.jpeg" alt="Picture of Gar Powell" class="center">
+            <h1>Gar Powell</h1>
+            <img src="images/logoOMEB.png" alt="Old man and an ebike logo" class="center">
+            <script src="java/guessTest.js" defer></script>
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="guessing.html">Guessing Game</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+           
+            <div>
+                 <!-- Code for guessing game -->
+                    <h3>Number Guessing Game</h3>
+                    <P>We have selected a random number between 1 and 100. See if you can guess 
+                        it in 10 or fewer trys. We will tell you if your guess was too high 
+                        or to low.
+                    </P>
+                    
+                    <!-- Guess text input. -->
+                    <input type="text" id="guess"/>
+
+                    <!-- Button to initiate guess check. -->
+                    <button id="Guess">Guess</button>
+                    <br>
+                    <!-- Reload page to play again. -->
+                    <a href="javascript: location.reload();">Play Again</a>
+
+                    <!-- Displaying guess result. -->
+                    <h3>How did you do?</h3>
+                    <h3 id = "resul"></h3>
+                    <h3 id = "trys"></h3>
+					<h3>Numbers Guessed</h3>
+					<h3 id ="numbersGussed"></h3>
+			
+            </div> 
+		</main>
+
+		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
+		<footer>
+			<a href="mailto:garpowell@westernwyoming.edu">garpowell@westernwyoming.edu</a>
+			<p>&copy; Copyright 2024. All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>
