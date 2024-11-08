@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+	Student Name: Gar Powell
+	File Name: template.html
+	Date: 11/1/24
+ -->
+
+<html lang="en">
+	<head>
+		<title>Zigzigging</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Embedding Canvas Into HTML Pages</title>
+		<style>
+			canvas {
+			border: 1px solid #000;
+			}
+		</style>
+			
+	</head>
+
+	<body>
+
+		<!-- Use the header area for the website name or logo. The header contains static content. -->
+		<header>
+			
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+		<nav>
+			<ul>
+				<li><a href="diamond.html">Diamond</a></li>
+				<li><a href="spiral.html">Spiral</a></li>
+				<li><a href="star.html">Star</a></li>
+				<li><a href="trapezoid.html">Trapezoid</a></li>
+				<li><a href="zigzagging.html">Zigzigging</a></li>
+			</ul>
+		</nav>
+
+		<!-- Drawing the zigzagging -->
+		<main>
+
+			<canvas id="myCanvas" width="600" height="200"></canvas>
+            <script>
+    			let ctx = document.querySelector("canvas").getContext("2d")
+                ctx.beginPath();
+                ctx.lineWidth = 2;
+					ctx.moveTo(100, 50);
+        			ctx.lineTo(250, 60);
+					ctx.lineTo(100, 70);
+					ctx.lineTo(250, 80);
+					ctx.lineTo(100, 90);
+        			ctx.lineTo(250, 100);
+					ctx.lineTo(100, 110);
+					ctx.lineTo(250, 120);
+					ctx.lineTo(100, 130);
+                    ctx.lineTo(250, 140);
+					ctx.lineTo(100, 150);
+					ctx.lineTo(250, 160);
+					ctx.lineTo(100, 170);
+        			ctx.stroke();
+    			
+			</script>
+
+		</main>
+
+		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
+		<footer>
+			<a href="mailto:garpowell@westernwyoming.edu">garpowell@westernwyoming.edu</a>
+			<p>&copy; Copyright 2024. All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>

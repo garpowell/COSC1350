@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!--
+	Student Name: Gar Powell
+	File Name: template.html
+	Date: 11/1/24
+ -->
+
+<html lang="en">
+	<head>
+		<title>Spiral</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Embedding Canvas Into HTML Pages</title>
+		<style>
+			canvas {
+			border: 1px solid #000;
+			}
+		</style>
+	
+	</head>
+
+	<body>
+
+		<!-- Use the header area for the website name or logo. The header contains static content. -->
+		<header>
+			
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+		<nav>
+			<ul>
+				<li><a href="diamond.html">Diamond</a></li>
+				<li><a href="spiral.html">Spiral</a></li>
+				<li><a href="star.html">Star</a></li>
+				<li><a href="trapezoid.html">Trapezoid</a></li>
+				<li><a href="zigzagging.html">Zigzigging</a></li>
+			</ul>
+		</nav>
+
+		<!-- Drawing the spiral -->
+		<main>
+
+            <canvas id="myCanvas" width="600" height="200" ></canvas>
+			<script>
+    			var cxt=document.getElementById("myCanvas").getContext("2d");
+    			cxt.moveTo(100, 100);
+
+    			var increment = 2*Math.PI/100;       
+    			var angle = increment;
+
+    			while( angle < 8*Math.PI) {
+      				var newX = 100 + angle * Math.cos(angle); 
+      				var newY = 100 + angle * Math.sin(angle); 
+      				cxt.lineTo(newX, newY);
+      				angle = angle + increment;
+   					 }
+    			cxt.stroke();
+</script>
+
+		</main>
+
+		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
+		<footer>
+			<a href="mailto:garpowell@westernwyoming.edu">garpowell@westernwyoming.edu</a>
+			<p>&copy; Copyright 2024. All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>
